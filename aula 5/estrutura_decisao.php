@@ -62,7 +62,7 @@ if($media >= 3)
    echo "O aluno foi de base.";
 }
 else if ($media >= 6){
-    echo "o aluno tankou o bostil"
+    echo "o aluno tankou o bostil";
 }
 else
 {
