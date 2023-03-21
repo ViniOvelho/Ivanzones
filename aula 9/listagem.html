@@ -11,13 +11,20 @@
 <h1>Produtos</h1>
 <hr>
 
-    <table id="armazem" bonder=1 with="100%"></table>
+    <table id="armazem" border=1 width="100%">
+<tr>
+    <th>Nome</th>
+    <th>Marca</th>
+    <th>Preço</th>
+</tr>
+
+    </table>
  
      
 
 <script>
 
-alert("ALERTA! ALERTA! TEM CORNO DE MULHER COM PERNA ABERTA!")
+function inserirLinha (nome, Marca, Preço){
 //esta pegando o elemento da tabela do HTML
 let tabela = document.querySelector("#armazem");
 //vamos criar uma linha nessa tabela
@@ -28,9 +35,20 @@ let celMarca = linha.insertCell();
 let celPreco = linha.insertCell();
 
 //coloca valor nas células
-celNome.innerHTML = "xxxx";
-celMarca.innerHTML = "xxxx";
-celPreco.innerHTML = "xxxx";
+celNome.innerHTML = "nome";
+celMarca.innerHTML = "marca";
+celPreco.innerHTML = "preço";
+}
+fetch ("http://localhost/3%c2%bainfob/Ivanzones/aula%209/produtos.php")
+.then($resposta => $resposta.json())
+.then($json => {
+    for (var i = 0; i <3; i++){
+        inserirLinha 
+        ($json[i]["nome"],
+        $json[i]["marca"], 
+        $json[i]["preco"]);
+    }
+});
 
 </script>
 

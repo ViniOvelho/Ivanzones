@@ -1,4 +1,3 @@
-<h2>Estudo de produtos</h2>
 
 <?php
 
