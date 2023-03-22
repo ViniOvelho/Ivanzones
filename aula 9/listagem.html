@@ -44,9 +44,7 @@ fetch ("http://localhost/3%c2%bainfob/Ivanzones/aula%209/produtos.php")
 .then($json => {
     for (var i = 0; i <3; i++){
         inserirLinha 
-        ($json[i]["nome"],
-        $json[i]["marca"], 
-        $json[i]["preco"]);
+        ($json[i]["nome"], $json[i]["marca"],  $json[i]["preco"]);
     }
 });
 
