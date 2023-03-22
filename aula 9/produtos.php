@@ -1,4 +1,3 @@
-<h2>Estudo de produtos</h2>
 
 <?php
 
@@ -16,3 +15,4 @@ $produto3
 ];
 
 echo json_encode ($armazem);
+?>
