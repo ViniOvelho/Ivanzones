@@ -3,7 +3,7 @@
 <?php include_once "menu.php"?>
 
 <?php $id = $_GET["id"];
-$noticia = $noticias[id];
+$noticia = $noticias[$id];
 
  ?>
 

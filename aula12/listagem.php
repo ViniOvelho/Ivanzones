@@ -10,14 +10,14 @@
 <!-- Noticias -->
 <div class="container">
 <div class="row row-cols-1 row-cols-md-3 g-3">
-<?php foreach ($noticias as $noticias): ?>
+<?php foreach ($noticias as $id => $noticia): ?>
 <div class="col">
 <div class="card">
-<img src="<?php echo $noticias["foto"]; ?>" class="card-img-top" alt="...">
+<img src="<?php echo $noticia["foto"]; ?>" class="card-img-top" alt="...">
 <div class="card-body">
-  <h5 class="card-title"><?php echo $noticias["titulo"]; ?></h5>
-  <p class="card-text"><?php echo $noticias["chamada"]; ?></p>
-  <a href="#" class="btn btn-primary">É isso ai</a>
+  <h5 class="card-title"><?php echo $noticia["titulo"]; ?></h5>
+  <p class="card-text"><?php echo $noticia["chamada"]; ?></p>
+  <a href="ler.php?id=<?php echo $id;?>" class="btn btn-primary">Ler Mais</a>
 </div>
 </div>
 </div>
