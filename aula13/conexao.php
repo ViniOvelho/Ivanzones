@@ -6,16 +6,16 @@ $password = "";
 $database = "db_catalogo_3infob";
 $port = 3306;
 
+//cria uma conexão com o mysql
+$conexao = new mysqli($host, 
+                      $user, 
+                      $password,
+                      $database,
+                      $port);
 
-
-//cria uma conexão com MySQL
-$conexao = new mysqli($host, $user, $password, $database, $port);
-
-
-if ($conexao -> connect_error){
-    echo $conexao -> connect_error;
+//verifica se existe erros na conexão                      
+if($conexao->connect_error){
+    echo $conexao->connect_error;
     die();
-
-}                      
-?>
+}
 
