@@ -3,10 +3,10 @@
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
-   $id = $_POST['idunoticia'];
+   $id = $_POST['idnoticia'];
    $titulo = $_POST['titulo'];
    $materia = $_POST['materia'];
-   $categoria = ($_POST['categoria'];
+   $categoria = $_POST['categoria'];
 
    //cria uma variável com um comando SQL
    $SQL = "UPDATE `noticia` SET `titulo`= ?, `materia`= ?, `categoria`= ? WHERE  `idnoticia`= ? ;";
