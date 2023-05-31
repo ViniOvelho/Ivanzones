@@ -1,5 +1,6 @@
 <?php require_once "consultar_por_id.php"; 
-require_once "../template/cabecalho.php"; ?>
+require_once "../template/cabecalho.php";
+require_once "../template/menu_restrito.php";?>
 
 
 <div class="container">
@@ -27,7 +28,7 @@ require_once "../template/cabecalho.php"; ?>
         <label>Foto</label><br>
         <input type="file" name="foto"><br>
 
-        <button type="submit">Inserir</button>    
+        <button type="submit"  class="btn btn-warning">Inserir</button>    
     </form>
     
 </div>

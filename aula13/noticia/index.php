@@ -2,6 +2,7 @@
 
 <?php require "consultar_todos.php"; 
 require_once "../template/cabecalho.php";
+require_once "../template/menu_restrito.php";
 ?>
 
 
