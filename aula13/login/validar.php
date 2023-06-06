@@ -26,13 +26,22 @@ $senha = $_POST['senha'];
      //pega a primeira linha de resultado da consulta
      $usuario = $resultado->fetch_object();
 
-if($usuario != NULL
- and password_verify($senha, $usuario->senha)){
+
+if($usuario != NULL)
+{ if (password_verify($senha, $usuario->senha)){
     session_start();
     $_SESSION['usuario'] = $usuario->nome;
     header("Location: ../noticia/index.php");
-    die();
-}}
- header("Location: formulario.php");
+ 
+}else{
+  $erro_login = "senha incorreta";
+}
+}else{
+  $erro_login = "Não existe usuário com login informado!";
+}
+
+}
+
+
 
 ?>
