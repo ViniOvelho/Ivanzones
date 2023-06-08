@@ -19,6 +19,9 @@ require_once "../template/cabecalho.php"; ?>
         
         <label class="form-label">Titulo</label><br>
         <input class="form-control" type="text" name="titulo" value="<?php echo $mensagens->titulo ?? "" ;?>"><br>
+        
+        <label class="form-label">Contexto</label><br>
+        <textarea class="form-control" type="text" name="contexto"><?php echo $mensagens->contexto ?? "" ;?>"</textarea><br>
 
         <label class="form-label">Categoria</label><br>
         <input class="form-control" type="text" name="categoria"><br>

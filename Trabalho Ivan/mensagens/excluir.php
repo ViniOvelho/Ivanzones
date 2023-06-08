@@ -1,6 +1,5 @@
 <?php
 
-
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 

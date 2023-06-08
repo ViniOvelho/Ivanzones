@@ -17,20 +17,15 @@
         </li>
         <li class="nav-item">
           <a class="nav-link"
-           href="../noticia/index.php">
-          Notícias
+           href="../mensagens/index.php">
+          Mensagens
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link"
-           href="../usuario/index.php">
-          Usuarios
-          </a>
-        </li>
+       
 
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit">Procurar</button>
       </form>
     </div>
   </div>

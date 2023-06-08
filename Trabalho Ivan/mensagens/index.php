@@ -9,7 +9,7 @@ require_once "../template/menu_restrito.php";
 
 
     <div class="container">
-    <h1>Noticias</h1>
+    <h1>Mensagens</h1>
     <hr>
    <div class="text-end">
      <a href="formulario.php" class="btn btn-success">Inserir Novo</a>
