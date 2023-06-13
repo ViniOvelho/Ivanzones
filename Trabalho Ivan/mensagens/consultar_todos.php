@@ -16,8 +16,8 @@ $comando->execute();
 $resultado = $comando->get_result();
 
 //pega a primeira linha de resultado da consulta
-$noticias = [];
+$mensagens = [];
 
-while ($noticia = $resultado->fetch_object()) {
-    $noticias[] = $noticia;
+while ($mensagem = $resultado->fetch_object()) {
+    $mensagens[] = $mensagem;
 }

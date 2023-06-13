@@ -9,7 +9,7 @@
 	require_once "faz_upload.php";
 
 	$titulo = $_POST['titulo'];
-	$materia = $_POST['contexto'];
+	$contexto = $_POST['contexto'];
 	$categoria = $_POST['categoria'];
 	$foto = $nome_foto;
 

@@ -5,15 +5,17 @@
 ?>
 
 <!-- Notícias -->
-<div class="container">
+<div class="container mt-4">
 <div class="row row-cols-1 row-cols-md-3 g-3">
-    <?php foreach($mensagens as $id => $mensagem): ?>
+
+    <?php foreach($mensagens as $id => $mensagem):    ?>
+    
     <div class="col">
     <div class="card" style="width: 18rem;">
-        <img src="../uploads/<?php echo $mensagens->foto; ?>" class="card-img-top" alt="...">
+        <img src="../uploads/<?php echo $mensagem->foto; ?>" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title"><?php echo $mensagens->titulo; ?></h5>
-            <a href="ler.php?id=<?php echo $mensagens->idmensagem;?>" class="btn btn-primary">Ler mais</a>
+            <h5 class="card-title"><?php echo $mensagem->titulo; ?></h5>
+            <a href="ler.php?id=<?php echo $mensagem->idmensagem;?>" class="btn btn-primary">Ler mais</a>
         </div>
     </div>
     </div>

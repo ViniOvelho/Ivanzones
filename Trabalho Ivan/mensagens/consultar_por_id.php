@@ -8,7 +8,7 @@
       $id = $_GET['id'];
 
       //cria uma variável com um comando SQL
-      $SQL = "SELECT * FROM `mensagens` WHERE `idmensagens`= ? ;";
+      $SQL = "SELECT * FROM `mensagens` WHERE `idmensagem`= ? ;";
       
       //prepara o comando para ser executado no mysql
       $comando = $conexao->prepare($SQL);
