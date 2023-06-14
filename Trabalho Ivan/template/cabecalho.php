@@ -19,13 +19,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../Img/silly walks.jpg" class="d-block w-100" alt="...">
+      <img src="../Img/whatsapp.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="../Img/silly walks (1).jpg" class="d-block w-100" alt="...">
+      <img src="../Img/telegram.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="../Img/silly walks (2).jpg" class="d-block w-100" alt="...">
+      <img src="../Img/discord.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
