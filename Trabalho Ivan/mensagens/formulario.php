@@ -16,7 +16,7 @@ require_once "../template/cabecalho.php"; ?>
     ?>"
     method="post" enctype="multipart/form-data">
 
-    <input type="hidden" name="idmensagens" value="<?php echo $mensagens->idmensagem ?? "" ;?>"><br>
+    <input type="hidden" name="idmensagem" value="<?php echo $mensagens->idmensagem ?? "" ;?>"><br>
         
         <label class="form-label">Titulo</label><br>
         <input class="form-control" type="text" name="titulo" value="<?php echo $mensagens->titulo ?? "" ;?>"><br>
